@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  background-color: rgb(10, 10, 42);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.links:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.links:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.left {
+  font-size: 1.3rem;
+}
+
+.firstSection {
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 140px 0;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2rem;
+}
+
+.leftSection .buttons {
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.leftSection .btn {
+  padding: 9px;
+  background: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.rightSection img {
+  width: 90%;
+  margin: 24px 0;
+}
+
+#element {
+  color: rgb(183, 113, 253);
+}
+
+.firstSectionAboutPage {
+  max-width: 60vw;
+  margin: 60px auto;
+  height: 70vh;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.firstSectionAboutPage .profileImage {
+  height: 128px;
+  margin: 0 40% 2% 40%;
+}
+
+.secondSectionAboutPage {
+  max-width: 80vw;
+  margin: 60px auto;
+  height: 50vh;
+}
+
+.secondSectionAboutPage h1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.thirdSectionAboutPage {
+  max-width: 80vw;
+  margin: 60px auto;
+  height: 50vh;
+}
+
+.thirdSectionAboutPage .educationDetails ol {
+  margin: 13px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.thirdSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 100vh;
+  padding: 10px;
+}
+
+.thirdSection h1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.thirdSection button {
+  margin-top: 8px;
+  padding: 4px;
+  background: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.thirdSection a {
+  text-decoration: none;
+  color: white;
+}
+
+.thirdSection .projectList {
+  margin: 14px;
+  padding: 5px;
+}
+
+.mainBox {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: rgb(10, 10, 42);
+  height: 160px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+footer .footerFirst {
+  margin: 2px 196px 20px -99px;
+}
+footer .footerFirst p {
+  font-size: small;
+}
+
+footer .footerSecond {
+  margin: 90px 0 0 0;
+  font-size: small;
+  color: gray;
+}
+
+.footer {
+  display: flex;
+  padding: 25px 120px;
+}
+
+/* Utility Classes */
+.purple {
+  color: rgb(183, 113, 253);
+}
+
+hr {
+  border: 0;
+  background: #9fd2ff;
+  height: 0.06px;
+  margin: 40px 78px;
+}
+
+.text-gray {
+  color: gray;
+}

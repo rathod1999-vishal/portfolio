@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- <div class="left">Vishal's Portfolio</div> -->
+        <div class="right">
+          <ul>
+            <li><a class="links" href="">Home</a></li>
+            <li><a class="links" href="about.html">About</a></li>
+            <li><a class="links" href="projects.html">Projects</a></li>
+            <li><a class="links" href="#footer">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section 1 -->
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi my name is <span class="purple">Vishal</span>,
+          <div>and I'm trying to become a passionate</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+            <a
+              href="https://linkedin.com/in/vishal-rathod-85804a199"
+              target="_blank"
+            >
+              <button class="btn">Visit Linkedin</button>
+            </a>
+            <a href="https://github.com/rathod1999-vishal" target="_blank">
+              <button class="btn">Visit GitHub</button>
+            </a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="illustration.png" alt="Web Developer Illustration" />
+        </div>
+      </section>
+
+      <hr />
+    </main>
+
+    <footer>
+      <div class="footer" id="footer">
+        <div class="footerFirst">
+          <h4>Contact me</h4>
+          <p>Email: rathodvishal016@gmail.com</p>
+          <p>Mobile: 7974376463</p>
+        </div>
+        <div class="footerSecond">
+          Portfolio created by Vishal Rtahod @ 2024
+        </div>
+      </div>
+    </footer>
+
+    <!-- Typed.js CDN script  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
